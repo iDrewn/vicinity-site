@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>VIcinity – a community chart for open-world games</title>
+  <meta name="description" content="VIcinity is a community chart, cheat list, guide library and progress tracker for open-world games on iPhone and iPhone Duo. The chart starts in fog and players light it up with what they find.">
+  <meta name="theme-color" content="#0b0620">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <meta property="og:title" content="VIcinity">
+  <meta property="og:description" content="A community chart that starts in fog. Pin what you find, confirm what works, track how far you've got.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://idrewn.github.io/vicinity-site/">
+  <meta property="og:image" content="https://idrewn.github.io/vicinity-site/assets/og.jpg">
+  <link rel="stylesheet" href="motion.css">
+  <link rel="stylesheet" href="theme.css">
+</head>
+<body>
+<div class="ambient" aria-hidden="true"></div>
+<header class="nav"><div class="wrap">
+  <a class="brand" href="./"><img src="assets/icon.png" alt="" width="24" height="24">VIcinity</a>
+  <ul><li><a href="#chart">Chart</a></li><li><a href="#duo">iPhone Duo</a></li><li><a href="#details">Details</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="support.html">Support</a></li></ul>
+  <a class="buy" href="support.html">Support</a>
+</div></header>
+<main>
+<section class="stage hero" id="top" style="--n:3.3" data-stage data-bg="#0b0620" data-glow="255,61,129">
+  <div class="pin">
+    <div class="hero-copy" data-beat="-1,-0.5,0.2,0.46" data-travel="-110">
+      <p class="eyebrow">Community chart &middot; iPhone &middot; iPhone Duo</p>
+      <h1>VIcinity.<br><span class="grad">A map the players draw.</span></h1>
+      <p class="lead">The chart starts in fog. Pin what you find, confirm what works, and watch the island light up.</p>
+      <div class="cta"><a class="pill fill" href="#chart">See how it works</a><a class="pill line" href="support.html">Support</a></div>
+    </div>
+    <p class="hero-tag" data-beat="0.42,0.62,2,3" data-travel="50">Pin it.<br><span class="grad">Prove it.</span></p>
+    <div class="fan"><div class="device" data-motion="fan" data-i="0" data-n="2"><img src="assets/phone-chart.png" alt="The VIcinity chart" width="1306" height="2360"></div><div class="device" data-motion="fan" data-i="1" data-n="2"><img src="assets/phone-library.png" alt="Cheats by platform" width="1306" height="2360"></div></div>
+  </div>
+</section>
+<section class="stage" id="chart" style="--n:3.15" data-stage data-bg="#12082b" data-glow="255,61,129">
+  <i class="mark" aria-hidden="true" data-bg="#12082b" data-glow="255,61,129" style="position:absolute;left:0;top:32.94%;width:1px;height:1px"></i>
+<i class="mark" aria-hidden="true" data-bg="#1a0a33" data-glow="255,138,61" style="position:absolute;left:0;top:67.06%;width:1px;height:1px"></i>
+  <div class="pin split">
+    <div class="copy"><div class="beat" data-beat="-1.000,-0.500,0.450,0.550">
+        <p class="eyebrow">The chart</p>
+        <h2>Fog of war, by the community.</h2>
+        <p>Every pin lights up the ground around it. A find that three players confirm earns the Verified stamp, so you can see what to trust at a glance.</p>
+      </div><div class="beat" data-beat="0.450,0.550,2.000,3.000">
+        <p class="eyebrow">Progress</p>
+        <h2>How far have you got?</h2>
+        <p>Tick milestones as you play, log what you collect, and see who finished first. Finish times come from the server&rsquo;s clock, so the board stays fair.</p>
+      </div></div>
+    <div class="devwrap"><div class="device" data-motion="sway"><img data-beat="-1.000,-0.500,0.440,0.560" src="assets/phone-chart.png" alt="The chart" loading="lazy" width=1306 height=2360><img data-beat="0.440,0.560,2.000,3.000" src="assets/phone-progress.png" alt="Progress and the leaderboard" loading="lazy" width=1306 height=2360></div></div>
+  </div>
+</section>
+<section class="stage" id="duo" style="--n:2.6" data-stage data-bg="#0e0726" data-glow="255,138,61">
+  <div class="pin split flip">
+    <div class="copy"><div class="beat" data-beat="-1.000,-0.500,2.000,3.000">
+        <p class="eyebrow">iPhone Duo</p>
+        <h2>Two screens. One chart.</h2>
+        <p>Open the Duo and the list sits beside the content, with the tab bar on the side where iOS puts it. Close it and the same screens collapse to one, with nothing hidden.</p>
+      </div></div>
+    <div class="devwrap"><div class="device wide" data-motion="wide" style="aspect-ratio:1600/1125"><img data-beat="-1.000,-0.500,2.000,3.000" src="assets/duo.jpg" alt="VIcinity on an iPhone Duo" loading="lazy" width=1600 height=1125></div></div>
+  </div>
+</section>
+<section class="block center" id="details" data-bg="#0b0620" data-glow="255,61,129">
+  <div class="wrap">
+    <p class="eyebrow" data-reveal>Details</p>
+    <h2 data-reveal>Built to be trusted.</h2>
+    <p class="lead" data-reveal>Anyone can add a pin or a cheat. Everyone can check it.</p>
+    <div class="bento"><div class="tile w4 hot" data-reveal><span class="k">Verified</span><h3>Unverified until it&rsquo;s proven.</h3><p>New pins and cheats start as Unverified. Players confirm or dispute them, and three confirmations earn the Verified stamp. Reports are reviewed, and content that doesn&rsquo;t belong is removed.</p></div>
+<div class="tile " data-reveal><span class="k">Cheats</span><h3>By platform.</h3><p>PS5, Xbox and PC each get their own list, with the unlock condition for every code.</p></div>
+<div class="tile " data-reveal><span class="k">Community</span><h3>Tip each other off.</h3><p>Share rare finds and say thanks to the players who helped you. Thanks build a tipster rank.</p></div>
+<div class="tile " data-reveal><span class="k">Sign in</span><h3>No password to remember.</h3><p>Start as a guest at once. Add Sign in with Apple or a passkey when you want your progress on every device.</p></div>
+<div class="tile w3" data-reveal><span class="k">Pro</span><h3>Free to use. Pro to go deeper.</h3><p>The chart, every cheat and the leaderboards are free. VIcinity Pro adds every guide in full, the collection tracker and a route planner, as a monthly or yearly subscription.</p></div>
+<div class="tile w3" data-reveal><span class="k">Private</span><h3>No ads. No tracking.</h3><p>No ads, no analytics and no name or e-mail address needed. <a href="privacy.html">Read the privacy policy</a>.</p></div></div>
+  </div>
+</section>
+<section class="cta-block" id="get" data-bg="#0b0620" data-glow="255,61,129">
+  <div class="wrap">
+    <img class="icon" src="assets/icon.png" alt="VIcinity app icon" width="132" height="132" data-reveal>
+    <h2 data-reveal>Get VIcinity.</h2>
+    <p class="lead" data-reveal>In TestFlight beta soon. For iPhone with iOS 26 or later, with a layout made for iPhone Duo.</p>
+    <div class="cta" data-reveal><a class="pill fill" href="support.html">Support</a><a class="pill line" href="privacy.html">Privacy</a></div>
+  </div>
+</section>
+</main>
+<footer><div class="wrap"><p>&copy; 2026 Anders Johansson. VIcinity is made by <a href="https://github.com/iDrewn">Anders Johansson</a>.</p>
+    <p>iPhone and iPhone Duo are trademarks of Apple Inc. VIcinity is an independent, unofficial fan app. It is not affiliated with, endorsed by or sponsored by Apple or by any game publisher or developer. Game and company names belong to their owners.</p></div></footer>
+<script src="motion.js" defer></script>
+</body>
+</html>

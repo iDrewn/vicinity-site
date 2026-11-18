@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Integritetspolicy – VIcinity</title>
+  <meta name="description" content="Så hanterar VIcinity dina uppgifter.">
+  <meta name="theme-color" content="#0b0620">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="motion.css">
+  <link rel="stylesheet" href="theme.css">
+</head>
+<body>
+<div class="ambient" aria-hidden="true"></div>
+<header class="nav"><div class="wrap">
+  <a class="brand" href="./"><img src="assets/icon.png" alt="" width="24" height="24">VIcinity</a>
+  <ul><li><a href="./#chart">Kartan</a></li><li><a href="./#duo">iPhone Duo</a></li><li><a href="./#details">Detaljer</a></li><li><a href="./integritet.html">Integritet</a></li><li><a href="./support.html">Support</a></li></ul>
+  <a class="buy" href="./support.html">Support</a>
+</div></header>
+<main class="doc">
+  <article class="prose">
+    <p class="eyebrow">Integritet</p>
+    <h1>Integritetspolicy</h1>
+    <p class="meta">VIcinity &middot; Senast uppdaterad 19 november 2026 &middot; <a href="privacy.html">English</a></p>
+
+    <p><strong>VIcinity har ingen reklam, inga analysverktyg från andra och ingen spårning, och appen frågar aldrig efter ditt namn, din e-postadress, ditt telefonnummer eller din position.</strong> Det finns däremot konton och en server, eftersom kartan, fusken, topplistorna och tipsen delas mellan spelare. Här står exakt vad servern sparar, varför och hur du kan ta bort det.</p>
+
+    <h2>Vem som ansvarar</h2>
+    <p>Anders Johansson, privatperson i Sverige, gör VIcinity och driver servern. Jag är personuppgiftsansvarig för de uppgifter som beskrivs här. Kontakt: se <a href="#fragor">Frågor</a> nedan.</p>
+
+    <h2>Konton</h2>
+    <p>Första gången du öppnar VIcinity skapar appen ett <em>gästkonto</em> med ett slumpmässigt användarnamn, till exempel &rdquo;Player4821&rdquo;. Du kan byta namn i Inställningar. Ett gästkonto har ingen inloggningsmetod: det hör ihop med en slumpad hemlighet i telefonens nyckelring. Senare kan du lägga till någon av dessa, eller båda:</p>
+    <ul>
+      <li><strong>Logga in med Apple.</strong> VIcinity ber inte Apple om ditt namn eller din e-postadress. Servern sparar bara det anonyma id som Apple ger appen för dig.</li>
+      <li><strong>Nyckel (passkey).</strong> Servern sparar den publika delen. Den privata delen stannar på dina enheter och i din iCloud-nyckelring enligt Apples villkor, och jag kan inte se den.</li>
+    </ul>
+
+    <h2>Vad servern sparar</h2>
+    <table>
+      <thead><tr><th>Uppgift</th><th>Varför</th></tr></thead>
+      <tbody>
+        <tr><td>Ditt användarnamn, när kontot skapades och när du senast var aktiv, appens version och vilka inloggningsmetoder du har</td><td>För att driva ditt konto, visa ditt namn på det du delar och se att appen och servern fungerar ihop.</td></tr>
+        <tr><td>En inloggningssession per enhet: en hash av dess hemlighet, en etikett som &rdquo;apple&rdquo; eller &rdquo;guest&rdquo; och när den senast användes</td><td>För att hålla dig inloggad. Utloggning eller borttaget konto raderar den.</td></tr>
+        <tr><td>Det du delar: pins (rubrik, beskrivning, kategori, sällsynthet, plats på kartan och en valfri skärmdump), fusk, dina bekräftelser och invändningar, tack du ger och rapporter du skickar</td><td>Det är den delade kartan och fuskarlistan. Ditt användarnamn visas på det.</td></tr>
+        <tr><td>Dina framsteg: milstolpar du bockar av och när (serverns klocka), hur många du hittat i varje samling och en valfri skärmdump som bevis</td><td>För att följa dina framsteg och rangordna spelare på topplistorna. Du kan dölja dig från topplistorna i Inställningar.</td></tr>
+        <tr><td>Din prenumerationsstatus: produkt, utgångsdatum och Apples transaktionsnummer</td><td>För att låsa upp VIcinity Pro på alla dina enheter och kontrollera det på servern.</td></tr>
+        <tr><td>Modereringsuppgifter: om ett konto är avstängt eller har skrivskydd och varför, en anteckning från personalen och en logg över vad personalen gjort</td><td>För att hålla gemenskapen trygg och kunna visa vad som gjorts och av vem.</td></tr>
+      </tbody>
+    </table>
+    <p>Servern samlar <em>inte</em> in ditt namn, din e-postadress, ditt telefonnummer, dina kontakter, reklam-id, andra enhetsidentiteter än ditt användarnamn och din session, eller din position. VIcinity använder inte GPS. Platserna på kartan är platser i spelet, inte i verkligheten.</p>
+
+    <h2>Vad andra spelare ser</h2>
+    <p>Ditt användarnamn, pins och fusk du delar, skärmdumpar du lägger på pins, tack som dina tips får, din tipsarrang och, om du inte döljer dig, din plats och procent på topplistorna. Skärmdumpar du bifogar som bevis ser bara jag och moderatorer.</p>
+
+    <h2>På din enhet</h2>
+    <p>VIcinity sparar en kopia av kartan och fusken så att appen öppnar snabbt och fungerar offline, samt sådant som bara gäller den här telefonen: vilka pins du markerat som hittade, din rutt, spelare du blockerat och dina inställningar. Sessionshemligheten ligger i nyckelringen och lämnar inte enheten i läsbar form. Om du tar bort appen försvinner den lokala kopian.</p>
+
+    <h2>Var servern finns</h2>
+    <p>Servern körs på en dator i mitt hem i Sverige. Den nås genom Cloudflares tunneltjänst, som därför hanterar din anslutning och kan se dess tekniska data, till exempel IP-adressen, på vägen. Cloudflare är mitt personuppgiftsbiträde enligt sina egna villkor. Servern sparar inte din IP-adress: den används bara i minnet för att begränsa hur snabbt ett nät kan skapa konton eller försöka logga in. Databasen säkerhetskopieras på samma dator och gamla kopior raderas efter ungefär två veckor.</p>
+
+    <h2>Apple</h2>
+    <p>Logga in med Apple, nycklar, iCloud-nyckelringen, App Store och din prenumeration är Apples tjänster enligt Apples egen integritetspolicy. VIcinity Pro köps via App Store. Apple hanterar betalningen och jag får aldrig dina betaluppgifter. Appen skickar en signerad transaktion från Apple till servern så att servern kan kontrollera att prenumerationen är riktig. Installerar du VIcinity via TestFlight eller App Store kan Apple också samla in användnings- och kraschinformation enligt sin policy. Jag ser bara det Apple väljer att dela, till exempel testarnas återkoppling.</p>
+
+    <h2>Kartan från GTABase</h2>
+    <p>På kartan visar en knapp en separat karta från GTABase (gtabase.com) inne i appen. Sidan hämtas direkt från GTABase och inte via min server. GTABase kan se din IP-adress och använder egna kakor enligt sin egen integritetspolicy. VIcinity läser eller sparar ingenting från den sidan. Du väljer själv om du öppnar den.</p>
+
+    <h2>Rapporter, blockering och moderering</h2>
+    <p>Du kan rapportera varje pin, fusk eller spelare. En rapport sparar vad du rapporterade, ditt användarnamn och din anledning, och ses bara av mig och moderatorer. Innehåll som inte hör hemma kan döljas eller tas bort, och konton som bryter mot reglerna kan stängas av. Att blockera en spelare döljer bara deras innehåll i din telefon.</p>
+
+    <h2>Hur länge jag sparar det</h2>
+    <p>Ditt konto och dina framsteg finns kvar tills du tar bort kontot. Gästkonton som aldrig används igen kan tas bort efter lång tids inaktivitet. Säkerhetskopior raderas efter ungefär två veckor.</p>
+
+    <h2>Ta bort ditt konto</h2>
+    <p>Öppna Framsteg i VIcinity, sedan Inställningar och välj <strong>Ta bort konto</strong>. Då tas dina inloggningsmetoder, sessioner, framsteg, samlingar, bevisbilder och åtkomst som inte kommer från App Store bort. <strong>Pins och fusk du delat finns kvar på kartan utan ditt namn</strong>, eftersom andra spelare har bekräftat och byggt vidare på dem. Vill du att en särskild pin eller bild också tas bort, be mig (se <a href="#fragor">Frågor</a>) så tar jag bort den. Har du använt Logga in med Apple kan du också sluta dela det med appen i Inställningar &rarr; ditt namn &rarr; Inloggning och säkerhet &rarr; Logga in med Apple.</p>
+
+    <h2>Dina rättigheter</h2>
+    <p>Du kan be mig berätta vad servern har sparat om dig, be mig rätta eller radera det och invända mot hur jag använder det. Det mesta kan du göra själv i appen: byta namn, dölja dig från topplistorna och ta bort kontot. Eftersom gästkonton saknar namn och e-postadress kan jag be dig visa mig ditt användarnamn inifrån appen så att jag hittar rätt. Den rättsliga grunden är att behandlingen behövs för att tillhandahålla appen till dig, och mitt berättigade intresse av en trygg och rättvis gemenskap utan missbruk. Du kan klaga hos Integritetsskyddsmyndigheten (IMY, <a href="https://www.imy.se">imy.se</a>).</p>
+
+    <h2>Barn</h2>
+    <p>VIcinity är inte gjord för barn och jag samlar inte medvetet in uppgifter från barn under 13 år. Innehåll från spelare modereras, men det är inte anpassat för yngre.</p>
+
+    <h2>Inte knuten till någon utgivare</h2>
+    <p>VIcinity är en oberoende fanapp. Den är inte gjord, godkänd eller sponsrad av någon spelutgivare eller utvecklare, och fusk, milstolpar och kartuppgifter i appen delas av spelare eller hämtas från offentliga guider och kan vara fel.</p>
+
+    <h2>Ändringar</h2>
+    <p>Om policyn ändras publiceras den nya versionen på den här sidan med ett nytt datum.</p>
+
+    <h2 id="fragor">Frågor</h2>
+    <p>Öppna ett ärende på <a href="https://github.com/iDrewn/vicinity-site/issues">projektets GitHub-sida</a> så svarar jag där. Skriv inga personuppgifter i ett öppet ärende: säg att du har en integritetsfråga så berättar jag hur du skickar den till mig privat.</p>
+  </article>
+</main>
+<footer><div class="wrap"><p>&copy; 2026 Anders Johansson. VIcinity görs av <a href="https://github.com/iDrewn">Anders Johansson</a>.</p>
+    <p>iPhone och iPhone Duo är varumärken som tillhör Apple Inc. VIcinity är en oberoende fanapp. Den är inte knuten till, godkänd av eller sponsrad av Apple eller någon spelutgivare eller utvecklare. Spel- och företagsnamn tillhör sina ägare.</p></div></footer>
+</body>
+</html>
